@@ -1,7 +1,16 @@
 
 <h3>Rubik Solver</h3>
+<p>{{faceno}}</p>
+
+<div [ngSwitch]="faceno">  
+        <div *ngSwitchCase="1">One is Pressed</div>  
+        <div *ngSwitchCase="2">Two is Selected</div>  
+        <div *ngSwitchDefault>Default Option</div>  
+</div>  
+
 
 <div id="cubeFields">
+    <!-- <ng-template [ngIf]="faceno" [ngIfElse]="face2">
     <div class="field1 color1 block"><span>1</span></div>
     <div class="field2 color2 block"><span>2</span></div>
     <div class="field3 color3 block"><span>3</span></div>
@@ -11,8 +20,86 @@
     <div class="field7 color5 block"><span>7</span></div>
     <div class="field8 color4 block"><span>8</span></div>
     <div class="field9 color3 block"><span>9</span></div>
-    
+    </ng-template> -->
+
+    <div [ngSwitch]="faceno">
+
+    <div *ngSwitchCase="1">
+    <div class="field1 color1 block"><span>1</span></div>
+    <div class="field2 color1 block"><span>2</span></div>
+    <div class="field3 color1 block"><span>3</span></div>
+    <div class="field4 color1 block "><span>4</span></div>
+    <div class="field5 color1 block"><span>5</span></div>
+    <div class="field6 color1 block"><span>6</span></div>
+    <div class="field7 color1 block"><span>7</span></div>
+    <div class="field8 color1 block"><span>8</span></div>
+    <div class="field9 color1 block"><span>9</span></div>
+    </div>
+
+    <div *ngSwitchCase="2">
+    <div class="field1 color2 block"><span>1</span></div>
+    <div class="field2 color2 block"><span>2</span></div>
+    <div class="field3 color2 block"><span>3</span></div>
+    <div class="field4 color2 block "><span>4</span></div>
+    <div class="field5 color2 block"><span>5</span></div>
+    <div class="field6 color2 block"><span>6</span></div>
+    <div class="field7 color2 block"><span>7</span></div>
+    <div class="field8 color2 block"><span>8</span></div>
+    <div class="field9 color2 block"><span>9</span></div>
+    </div>
+
+    <div *ngSwitchCase="3">
+    <div class="field1 color3 block"><span>1</span></div>
+    <div class="field2 color3 block"><span>2</span></div>
+    <div class="field3 color3 block"><span>3</span></div>
+    <div class="field4 color3 block "><span>4</span></div>
+    <div class="field5 color3 block"><span>5</span></div>
+    <div class="field6 color3 block"><span>6</span></div>
+    <div class="field7 color3 block"><span>7</span></div>
+    <div class="field8 color3 block"><span>8</span></div>
+    <div class="field9 color3 block"><span>9</span></div>
+    </div>
+
+    <div *ngSwitchCase="4">
+    <div class="field1 color4 block"><span>1</span></div>
+    <div class="field2 color4 block"><span>2</span></div>
+    <div class="field3 color4 block"><span>3</span></div>
+    <div class="field4 color4 block "><span>4</span></div>
+    <div class="field5 color4 block"><span>5</span></div>
+    <div class="field6 color4 block"><span>6</span></div>
+    <div class="field7 color4 block"><span>7</span></div>
+    <div class="field8 color4 block"><span>8</span></div>
+    <div class="field9 color4 block"><span>9</span></div>
+    </div>
+
+    <div *ngSwitchCase="5">
+    <div class="field1 color5 block"><span>1</span></div>
+    <div class="field2 color5 block"><span>2</span></div>
+    <div class="field3 color5 block"><span>3</span></div>
+    <div class="field4 color5 block "><span>4</span></div>
+    <div class="field5 color5 block"><span>5</span></div>
+    <div class="field6 color5 block"><span>6</span></div>
+    <div class="field7 color5 block"><span>7</span></div>
+    <div class="field8 color5 block"><span>8</span></div>
+    <div class="field9 color5 block"><span>9</span></div>
+    </div>
+
+    <div *ngSwitchCase="6">
+    <div class="field1 color6 block"><span>1</span></div>
+    <div class="field2 color6 block"><span>2</span></div>
+    <div class="field3 color6 block"><span>3</span></div>
+    <div class="field4 color6 block "><span>4</span></div>
+    <div class="field5 color6 block"><span>5</span></div>
+    <div class="field6 color6 block"><span>6</span></div>
+    <div class="field7 color6 block"><span>7</span></div>
+    <div class="field8 color6 block"><span>8</span></div>
+    <div class="field9 color6 block"><span>9</span></div>
+    </div>
+
+    </div>
 </div>
+
+
 
 <div id="controls">
 <button class="leftButton" (click)="left()">Left</button>
