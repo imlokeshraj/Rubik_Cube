@@ -1,0 +1,27 @@
+#cubeFields{position : relative ; top : 10px ; left : 10px}
+
+.block{position: absolute ; width: 50px ; height: 50px ; border: 2px solid #000;}
+
+.color1{    background-color: #FFFFFF;  }   
+.color2{    background-color: #FF6907;  }   
+.color3{    background-color: #00A75D;  }   
+.color4{    background-color: #B60101;  }
+.color5{    background-color: #213DFD;  }
+.color6{    background-color: #FFD500;  }
+
+.field1{position : absolute ; top : 10px ; left : 10px}
+.field2{position : absolute ; top : 10px ; left : 65px}
+.field3{position : absolute ; top : 10px ; left : 120px}
+.field4{position : absolute ; top : 65px ; left : 10px}
+.field5{position : absolute ; top : 65px ; left : 65px}
+.field6{position : absolute ; top : 65px ; left : 120px}
+.field7{position : absolute ; top : 120px ; left : 10px}
+.field8{position : absolute ; top : 120px ; left : 65px}
+.field9{position : absolute ; top : 120px ; left : 120px}
+
+#controls{position : relative ; top : 220px ; left : 10px}
+
+.leftButton{position : absolute ; top : 30px ; left : 10px}
+.rightButton{position : absolute ; top : 30px ; left : 125px}
+.topButton{position : absolute ; top : 5px ; left : 65px}
+.bottomButton{position : absolute ; top : 55px ; left : 55px}
