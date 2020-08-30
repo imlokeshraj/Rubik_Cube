@@ -23,7 +23,7 @@
 .field7{position : absolute ; top : 120px ; left : 10px}
 .field8{position : absolute ; top : 120px ; left : 65px}
 .field9{position : absolute ; top : 120px ; left : 120px}
-.fieldtemp{position : absolute ; top : 250px ; left : 120px}
+.fieldt{position : absolute ; top : 250px ; left : 120px}
 
 .sample1{position : absolute ; top : 5px ; left : 80px}
 .sample2{position : absolute ; top : 25px ; left : 80px}
@@ -41,3 +41,8 @@
 .sidesButton{position : absolute ; top : 30px ; left : 60px}
 
 .sample{background-color: red}
+
+.emptyPattern{
+background-color: gray;
+background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+}

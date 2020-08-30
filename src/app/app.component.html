@@ -1,82 +1,81 @@
 
 <h3>Rubik Solver</h3>
 <!-- <div  style="cursor: pointer" (click)="changeColor()" class="sample">{{sideRotation}}</div> -->
-<button class="rotate" (click)="rotate()">Rotate</button>
+<!-- <button class="rotate" (click)="rotate()">Rotate</button> -->
 <div>Side {{faceno}}</div>
-
 <div id="cubeFields">
     <div [ngSwitch]="faceno">
 
     <div *ngSwitchCase="1">
-    <div class="field1 color1 block"><span>1</span></div>
-    <div class="field2 color1 block"><span>2</span></div>
-    <div class="field3 color1 block"><span>3</span></div>
-    <div class="field4 color1 block"><span>4</span></div>
-    <div class="field5 color1 block"><span>5</span></div>
-    <div class="field6 color1 block"><span>6</span></div>
-    <div class="field7 color1 block"><span>7</span></div>
-    <div class="field8 color1 block"><span>8</span></div>
-    <div class="field9 color1 block"><span>9</span></div>
+    <div id="1_1" ngClass="{{cubeBlocks[0][0]}}" (click)="changeColor('1_1')"><span>1</span></div>
+    <div id="1_2" ngClass="{{cubeBlocks[0][1]}}" (click)="changeColor('1_2')"><span>2</span></div>
+    <div id="1_3" ngClass="{{cubeBlocks[0][2]}}" (click)="changeColor('1_3')"><span>3</span></div>
+    <div id="1_4" ngClass="{{cubeBlocks[0][3]}}" (click)="changeColor('1_4')"><span>4</span></div>
+    <div id="1_5" ngClass="{{cubeBlocks[0][4]}}" (click)="changeColor('1_5')"><span>5</span></div>
+    <div id="1_6" ngClass="{{cubeBlocks[0][5]}}" (click)="changeColor('1_6')"><span>6</span></div>
+    <div id="1_7" ngClass="{{cubeBlocks[0][6]}}" (click)="changeColor('1_7')"><span>7</span></div>
+    <div id="1_8" ngClass="{{cubeBlocks[0][7]}}" (click)="changeColor('1_8')"><span>8</span></div>
+    <div id="1_9" ngClass="{{cubeBlocks[0][8]}}" (click)="changeColor('1_9')"><span>9</span></div>
     </div>
 
     <div *ngSwitchCase="2">
-    <div class="field1 color2 block"><span>1</span></div>
-    <div class="field2 color2 block"><span>2</span></div>
-    <div class="field3 color2 block"><span>3</span></div>
-    <div class="field4 color2 block"><span>4</span></div>
-    <div class="field5 color2 block"><span>5</span></div>
-    <div class="field6 color2 block"><span>6</span></div>
-    <div class="field7 color2 block"><span>7</span></div>
-    <div class="field8 color2 block"><span>8</span></div>
-    <div class="field9 color2 block"><span>9</span></div>
+    <div id="2_1" ngClass="{{cubeBlocks[1][0]}}" (click)="changeColor('2_1')"><span>1</span></div>
+    <div id="2_2" ngClass="{{cubeBlocks[1][1]}}" (click)="changeColor('2_2')"><span>2</span></div>
+    <div id="2_3" ngClass="{{cubeBlocks[1][2]}}" (click)="changeColor('2_3')"><span>3</span></div>
+    <div id="2_4" ngClass="{{cubeBlocks[1][3]}}" (click)="changeColor('2_4')"><span>4</span></div>
+    <div id="2_5" ngClass="{{cubeBlocks[1][4]}}" (click)="changeColor('2_5')"><span>5</span></div>
+    <div id="2_6" ngClass="{{cubeBlocks[1][5]}}" (click)="changeColor('2_6')"><span>6</span></div>
+    <div id="2_7" ngClass="{{cubeBlocks[1][6]}}" (click)="changeColor('2_7')"><span>7</span></div>
+    <div id="2_8" ngClass="{{cubeBlocks[1][7]}}" (click)="changeColor('2_8')"><span>8</span></div>
+    <div id="2_9" ngClass="{{cubeBlocks[1][8]}}" (click)="changeColor('2_9')"><span>9</span></div>
     </div>
 
     <div *ngSwitchCase="3">
-    <div class="field1 color3 block"><span>1</span></div>
-    <div class="field2 color3 block"><span>2</span></div>
-    <div class="field3 color3 block"><span>3</span></div>
-    <div class="field4 color3 block"><span>4</span></div>
-    <div class="field5 color3 block"><span>5</span></div>
-    <div class="field6 color3 block"><span>6</span></div>
-    <div class="field7 color3 block"><span>7</span></div>
-    <div class="field8 color3 block"><span>8</span></div>
-    <div class="field9 color3 block"><span>9</span></div>
+    <div id="3_1" ngClass="{{cubeBlocks[2][0]}}" (click)="changeColor('3_1')"><span>1</span></div>
+    <div id="3_2" ngClass="{{cubeBlocks[2][1]}}" (click)="changeColor('3_2')"><span>2</span></div>
+    <div id="3_3" ngClass="{{cubeBlocks[2][2]}}" (click)="changeColor('3_3')"><span>3</span></div>
+    <div id="3_4" ngClass="{{cubeBlocks[2][3]}}" (click)="changeColor('3_4')"><span>4</span></div>
+    <div id="3_5" ngClass="{{cubeBlocks[2][4]}}" (click)="changeColor('3_5')"><span>5</span></div>
+    <div id="3_6" ngClass="{{cubeBlocks[2][5]}}" (click)="changeColor('3_6')"><span>6</span></div>
+    <div id="3_7" ngClass="{{cubeBlocks[2][6]}}" (click)="changeColor('3_7')"><span>7</span></div>
+    <div id="3_8" ngClass="{{cubeBlocks[2][7]}}" (click)="changeColor('3_8')"><span>8</span></div>
+    <div id="3_9" ngClass="{{cubeBlocks[2][8]}}" (click)="changeColor('3_9')"><span>9</span></div>
     </div>
 
     <div *ngSwitchCase="4">
-    <div class="field1 color4 block"><span>1</span></div>
-    <div class="field2 color4 block"><span>2</span></div>
-    <div class="field3 color4 block"><span>3</span></div>
-    <div class="field4 color4 block"><span>4</span></div>
-    <div class="field5 color4 block"><span>5</span></div>
-    <div class="field6 color4 block"><span>6</span></div>
-    <div class="field7 color4 block"><span>7</span></div>
-    <div class="field8 color4 block"><span>8</span></div>
-    <div class="field9 color4 block"><span>9</span></div>
+    <div id="4_1" ngClass="{{cubeBlocks[3][0]}}" (click)="changeColor('4_1')"><span>1</span></div>
+    <div id="4_2" ngClass="{{cubeBlocks[3][1]}}" (click)="changeColor('4_2')"><span>2</span></div>
+    <div id="4_3" ngClass="{{cubeBlocks[3][2]}}" (click)="changeColor('4_3')"><span>3</span></div>
+    <div id="4_4" ngClass="{{cubeBlocks[3][3]}}" (click)="changeColor('4_4')"><span>4</span></div>
+    <div id="4_5" ngClass="{{cubeBlocks[3][4]}}" (click)="changeColor('4_5')"><span>5</span></div>
+    <div id="4_6" ngClass="{{cubeBlocks[3][5]}}" (click)="changeColor('4_6')"><span>6</span></div>
+    <div id="4_7" ngClass="{{cubeBlocks[3][6]}}" (click)="changeColor('4_7')"><span>7</span></div>
+    <div id="4_8" ngClass="{{cubeBlocks[3][7]}}" (click)="changeColor('4_8')"><span>8</span></div>
+    <div id="4_9" ngClass="{{cubeBlocks[3][8]}}" (click)="changeColor('4_9')"><span>9</span></div>
     </div>
 
     <div *ngSwitchCase="5">
-    <div class="field1 color5 block"><span>1</span></div>
-    <div class="field2 color5 block"><span>2</span></div>
-    <div class="field3 color5 block"><span>3</span></div>
-    <div class="field4 color5 block"><span>4</span></div>
-    <div class="field5 color5 block"><span>5</span></div>
-    <div class="field6 color5 block"><span>6</span></div>
-    <div class="field7 color5 block"><span>7</span></div>
-    <div class="field8 color5 block"><span>8</span></div>
-    <div class="field9 color5 block"><span>9</span></div>
+    <div id="5_1" ngClass="{{cubeBlocks[4][0]}}" (click)="changeColor('5_1')"><span>1</span></div>
+    <div id="5_2" ngClass="{{cubeBlocks[4][1]}}" (click)="changeColor('5_2')"><span>2</span></div>
+    <div id="5_3" ngClass="{{cubeBlocks[4][2]}}" (click)="changeColor('5_3')"><span>3</span></div>
+    <div id="5_4" ngClass="{{cubeBlocks[4][3]}}" (click)="changeColor('5_4')"><span>4</span></div>
+    <div id="5_5" ngClass="{{cubeBlocks[4][4]}}" (click)="changeColor('5_5')"><span>5</span></div>
+    <div id="5_6" ngClass="{{cubeBlocks[4][5]}}" (click)="changeColor('5_6')"><span>6</span></div>
+    <div id="5_7" ngClass="{{cubeBlocks[4][6]}}" (click)="changeColor('5_7')"><span>7</span></div>
+    <div id="5_8" ngClass="{{cubeBlocks[4][7]}}" (click)="changeColor('5_8')"><span>8</span></div>
+    <div id="5_9" ngClass="{{cubeBlocks[4][8]}}" (click)="changeColor('5_9')"><span>9</span></div>
     </div>
 
     <div *ngSwitchCase="6">
-    <div class="field1 color6 block"><span>1</span></div>
-    <div class="field2 color6 block"><span>2</span></div>
-    <div class="field3 color6 block"><span>3</span></div>
-    <div class="field4 color6 block"><span>4</span></div>
-    <div class="field5 color6 block"><span>5</span></div>
-    <div class="field6 color6 block"><span>6</span></div>
-    <div class="field7 color6 block"><span>7</span></div>
-    <div class="field8 color6 block"><span>8</span></div>
-    <div class="field9 color6 block"><span>9</span></div>
+    <div id="6_1" ngClass="{{cubeBlocks[5][0]}}" (click)="changeColor('6_1')"><span>1</span></div>
+    <div id="6_2" ngClass="{{cubeBlocks[5][1]}}" (click)="changeColor('6_2')"><span>2</span></div>
+    <div id="6_3" ngClass="{{cubeBlocks[5][2]}}" (click)="changeColor('6_3')"><span>3</span></div>
+    <div id="6_4" ngClass="{{cubeBlocks[5][3]}}" (click)="changeColor('6_4')"><span>4</span></div>
+    <div id="6_5" ngClass="{{cubeBlocks[5][4]}}" (click)="changeColor('6_5')"><span>5</span></div>
+    <div id="6_6" ngClass="{{cubeBlocks[5][5]}}" (click)="changeColor('6_6')"><span>6</span></div>
+    <div id="6_7" ngClass="{{cubeBlocks[5][6]}}" (click)="changeColor('6_7')"><span>7</span></div>
+    <div id="6_8" ngClass="{{cubeBlocks[5][7]}}" (click)="changeColor('6_8')"><span>8</span></div>
+    <div id="6_9" ngClass="{{cubeBlocks[5][8]}}" (click)="changeColor('6_9')"><span>9</span></div>
     </div>
 
     </div>
@@ -95,45 +94,46 @@
 <div id="colors">
     <!-- <form name="myForm" ng-controller="ExampleController"> -->
     <label>
-            <input type="radio" value="white" name="color" (change)="onColorChange('white')">
+            <input type="radio" value="White" name="color" (change)="onColorChange('White')">
             White
             <div class="sample1 color1 colorSample"></div>
     </label>
     <br/>
     <label>
-            <input type="radio" value="orange" name="color" (change)="onColorChange('orange')">
+            <input type="radio" value="Orange" name="color" (change)="onColorChange('Orange')">
             Orange
             <div class="sample2 color2 colorSample"></div>
     </label>
     <br/>
     <label>
-            <input type="radio" value="green" name="color" (change)="onColorChange('green')">
+            <input type="radio" value="Green" name="color" (change)="onColorChange('Green')">
             Green
             <div class="sample3 color3 colorSample"></div>
     </label>
     <br/>
     <label>
-            <input type="radio" value="red" name="color"  (change)="onColorChange('red')">
+            <input type="radio" value="Red" name="color"  (change)="onColorChange('Red')">
             Red
             <div class="sample4 color4 colorSample"></div>
     </label>
     <br/>
     <label>
-            <input type="radio" value="blue" name="color" (change)="onColorChange('blue')">
+            <input type="radio" value="Blue" name="color" (change)="onColorChange('Blue')">
             Blue
             <div class="sample5 color5 colorSample"></div>
     </label>
     <br/>
     <label>
-            <input type="radio" value="yellow" name="color" (change)="onColorChange('yellow')">
+            <input type="radio" value="Yellow" name="color" (change)="onColorChange('Yellow')">
             Yellow
             <div class="sample6 color6 colorSample"></div>
     </label>
     <br/>
     <p style="background-color: {{selectedColor}}">color = {{selectedColor}}</p>
 <!-- </form> -->
-</div>
+<!-- </div>
 <div id="cubeFields">
-<div class="fieldtemp block" [ngClass]="colorClass" (click)="changeColor()"><span>1</span></div>
-</div>
+<div id="temp" ngClass="{{tempCube}}"  (click)="changeColor('temp')"><span>1</span></div>
+</div> -->
+
 <router-outlet></router-outlet>
